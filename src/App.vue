@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Title/>
+    <Jumbotron/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Title from '@/components/Title.vue';
+import Jumbotron from '@/components/Jumbotron.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Title,
+    Jumbotron
   }
 }
 </script>
@@ -22,7 +24,13 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #fff;
+  background-image: url(./assets/arcane-topping-netflix-top-10s-2021.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 </style>
